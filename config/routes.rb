@@ -1,4 +1,15 @@
 Rails.application.routes.draw do
+  root 'static#home'
+  get 'static/home'
+
+  get 'static/about'
+
+  get 'static/contact'
+
+  resources :appointments
+
+  resources :pets
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
