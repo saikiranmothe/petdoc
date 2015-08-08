@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Current date:</strong>
+  <%= @appointment.current_date %>
+</p>
+
+<p>
+  <strong>Reason for visit:</strong>
+  <%= @appointment.reason_for_visit %>
+</p>
+
+<%= link_to 'Edit', edit_appointment_path(@appointment) %> |
+<%= link_to 'Back', appointments_path %>
